@@ -1,6 +1,8 @@
-import { PropsWithChildren, useEffect, useRef, useState } from 'react';
+import { HTMLAttributes, PropsWithChildren, useEffect, useRef, useState } from 'react';
 
-const LazySection = ({ children, className }: PropsWithChildren<{ className?: string }>) => {
+type LazySectionProps = PropsWithChildren<HTMLAttributes<HTMLDivElement>>;
+
+const LazySection = ({ children, className, ...rest }: LazySectionProps) => {
   const ref = useRef<HTMLDivElement | null>(null);
   const [visible, setVisible] = useState(false);
 
@@ -23,7 +25,7 @@ const LazySection = ({ children, className }: PropsWithChildren<{ className?: st
   }, [visible]);
 
   return (
-    <div ref={ref} className={className}>
+    <div ref={ref} className={className} {...rest}>
       {visible ? children : null}
     </div>
   );

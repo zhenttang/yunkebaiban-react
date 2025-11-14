@@ -14,6 +14,18 @@
 - **性能友好的懒加载**：路由级代码拆分 + LazySection 延迟渲染重内容区，保持首屏轻量。
 - **开源向社区开放**：在 `/opensource` 页面实时展示 GitHub Star / Fork，提供贡献指引。
 
+## 👀 界面预览
+
+<p align="center">
+  <img src="./assets/PixPin_2025-11-14_18-15-56.png" alt="首页预览" width="420" />
+  <img src="./assets/PixPin_2025-11-14_18-16-24.png" alt="下载页平台卡片" width="420" />
+</p>
+
+<p align="center">
+  <img src="./assets/PixPin_2025-11-14_18-16-54.png" alt="定价页面" width="420" />
+  <img src="./assets/PixPin_2025-11-14_18-17-06.png" alt="开源页面" width="420" />
+</p>
+
 ## 📁 目录结构
 
 ```
